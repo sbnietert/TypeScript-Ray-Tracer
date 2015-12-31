@@ -1,5 +1,5 @@
 # TypeScript Ray Tracer
-Simple ray tracing using TypeScript, Web Workers, and HTML5 Canvas.
+Simple ray tracing using TypeScript, Web Workers, and HTML5 Canvas. See it in action [here](http://sloan.nietert.me/ray_tracer).
 
 This is a ported and upgraded version of the C++ ray tracer I built as a final project for my first CS course in college.
 
