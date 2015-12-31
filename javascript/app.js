@@ -36,7 +36,7 @@ var RT;
             this.scene = 'Models';
             this.sceneData = new SceneData();
             this.gui = new dat.GUI({ width: 400 });
-            this.rayTracer = new Worker('worker.js');
+            this.rayTracer = new Worker('javascript/worker.js');
             this.ctx = canvas.getContext('2d');
             var sceneFileController = this.gui.add(this, 'scene', Object.keys(RT.SceneViewer.scenes));
             sceneFileController.onChange(function () {

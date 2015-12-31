@@ -34,7 +34,7 @@
 
             (<any>postMessage)({
                 command: 'render complete'
-            }, targetOrigin);
+            });
         }
     }
 }

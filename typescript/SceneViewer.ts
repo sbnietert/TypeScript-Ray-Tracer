@@ -21,7 +21,7 @@ module RT {
         private scene = 'Models';
         private sceneData = new SceneData();
         private gui = new dat.GUI({ width: 400 });
-        private rayTracer = new Worker('worker.js');
+        private rayTracer = new Worker('javascript/worker.js');
         private renderButtonController: dat.GUIController;
 
         constructor(private canvas: HTMLCanvasElement) {

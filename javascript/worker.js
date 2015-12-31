@@ -1664,7 +1664,7 @@ var RT;
             });
             postMessage({
                 command: 'render complete'
-            }, targetOrigin);
+            });
         }
     };
 })(RT || (RT = {}));
