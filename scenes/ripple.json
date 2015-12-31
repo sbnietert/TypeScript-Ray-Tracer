@@ -1,0 +1,36 @@
+﻿{
+  "renderSettings": {
+    "camera": {
+      "eye": [ -0.5, 2.4, -6.2 ],
+      "direction": [ 0.1, -0.4, 0.9 ],
+      "up": [ 0, 1, 0 ],
+      "focalLength": 1,
+      "pixelWidth": 500,
+      "pixelHeight": 500
+    },
+    "subpixelGridSize": 1,
+    "recursionDepth": 100
+  },
+  "background": {
+    "type": "phi-gradient",
+    "color": [ 0, 0, 0 ],
+    "color1": [ 0.53, 0.81, 0.92 ],
+    "color2": [ 0, 0.44, 1 ],
+    "axis": [ 0, 1, 0.5 ],
+    "n": 5
+  },
+  "sceneGraph": [
+    {
+      "type": "rippled-surface",
+      "value": {
+        "xMin": -3,
+        "xMax": 3,
+        "zMin": -3,
+        "zMax": 3,
+        "thickness": 0.1,
+        "gridSize": 40,
+        "material": "glass"
+      }
+    }
+  ]
+}

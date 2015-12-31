@@ -1,0 +1,45 @@
+﻿{
+  "renderSettings": {
+    "camera": {
+      "eye": [ -2.1, 0, -5 ],
+      "direction": [ 0.5, 0, 1 ],
+      "up": [ 0, 1, 0 ],
+      "focalLength": 1,
+      "pixelWidth": 500,
+      "pixelHeight": 500
+    },
+    "subpixelGridSize": 1,
+    "recursionDepth": 10
+  },
+  "background": {
+    "type": "solid-color",
+    "color": [ 0, 0, 0 ]
+  },
+  "lights": [
+    {
+      "position": [ 0, 0, 0 ],
+      "color": [ 0, 0.9, 0.7 ],
+      "intensity": 0.7
+    }
+  ],
+  "materials": {
+    "semi-mirror": {
+      "type": "simple",
+      "color": [ 0.5, 0.5, 0.5 ],
+      "reflection": 0.5
+    }
+  },
+  "sceneGraph": [
+    {
+      "type": "menger-sponge",
+      "value": {
+        "ll": [ -1.5, -1.5, -1.5 ],
+        "ur": [ 1.5, 1.5, 1.5 ],
+        "depth": 2,
+        "lightColor": [ 0, 0.9, 0.7 ],
+        "lightIntensity": 0.7,
+        "material": "semi-mirror"
+      }
+    }
+  ]
+}

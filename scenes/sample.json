@@ -1,0 +1,133 @@
+﻿{
+  "renderSettings": {
+    "camera": {
+      "eye": [ 0, 0, 0 ],
+      "direction": [ 0, 0, 1 ],
+      "up": [ 0, 1, 0 ],
+      "focalLength": 1,
+      "pixelWidth": 512,
+      "pixelHeight": 384
+    },
+    "subpixelGridSize": 2,
+    "recursionDepth": 10
+  },
+  "background": {
+    "type": "phi-gradient",
+    "color1": [ 0.53, 0.81, 0.92 ],
+    "color2": [ 0, 0.44, 1 ],
+    "axis": [ 0, 1, -0.25 ],
+    "n": 5
+  },
+  "lights": [
+    {
+      "position": [ -10, 10, -5 ],
+      "color": [ 1, 1, 1 ],
+      "intensity": 0.7
+    },
+    {
+      "position": [ 0, 10, -10 ],
+      "color": [ 1, 1, 1 ],
+      "intensity": 1
+    }
+  ],
+  "materials": {
+    "red": {
+      "type": "simple",
+      "color": [ 0.8, 0, 0 ]
+    },
+    "diamond-checkerboard": {
+      "type": "xz-diamond-checkered",
+      "color1": [ 0.1, 0.1, 0.1 ],
+      "color2": [ 1, 1, 1 ],
+      "reflection": 0.1
+    },
+    "shiny-green": {
+      "type": "simple",
+      "color": [ 0.1, 0.8, 0.2 ],
+      "reflection": 0.3
+    },
+    "yellow": {
+      "type": "simple",
+      "color": [ 0.8, 0.9, 0 ]
+    },
+    "cyan": {
+      "type": "simple",
+      "color": [ 0, 0.9, 0.8 ]
+    }
+  },
+  "sceneGraph": [
+    {
+      "type": "collection",
+      "value": [
+        {
+          "type": "object",
+          "value": {
+            "geometry": {
+              "type": "sphere",
+              "center": [ 0.5, 0.8, 4.0 ],
+              "radius": 0.5
+            },
+            "material": "red"
+          }
+        },
+        {
+          "type": "object",
+          "value": {
+            "geometry": {
+              "type": "sphere",
+              "center": [ -0.5, 0.15, 4.2 ],
+              "radius": 0.6
+            },
+            "material": "glass"
+          }
+        }
+      ]
+    },
+    {
+      "type": "object",
+      "value": {
+        "geometry": {
+          "type": "plane",
+          "normal": [ 0, 1, 0 ],
+          "offset": 0.9
+        },
+        "material": "diamond-checkerboard"
+      }
+    },
+    {
+      "type": "object",
+      "value": {
+        "geometry": {
+          "type": "cylinder",
+          "point": [ 2, 0, 5 ],
+          "direction": [ 0, 1, 0 ],
+          "radius": 1
+        },
+        "material": "shiny-green"
+      }
+    },
+    {
+      "type": "object",
+      "value": {
+        "geometry": {
+          "type": "triangle",
+          "A": [ -2, 0, 5 ],
+          "B": [ -1, 1, 5 ],
+          "C": [ -2.5, 2, 4 ]
+        },
+        "material": "yellow"
+      }
+    },
+    {
+      "type": "object",
+      "value": {
+        "geometry": {
+          "type": "axis-aligned-box",
+          "A": [ 1, -0.75, 2 ],
+          "B": [ 1.5, -0.25, 2.5 ]
+        },
+        "material": "cyan"
+      }
+    }
+  ]
+}
